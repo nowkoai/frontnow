@@ -1,16 +1,27 @@
 {
-    "routes": [
-        {
-            "route": "/*",
-            "allowedRoles": [
-                "authenticated"
-            ]
-        }
-    ],
-    "responseOverrides": {
-        "401": {
-            "statusCode": 302,
-            "redirect": "/.auth/login/aad"
-        }
+  "routes": [
+    {
+      "route": "/login",
+      "redirect": "/.auth/login/aad"
+    },
+    {
+      "route": "/",
+      "allowedRoles": ["authenticated"]
+    },
+    {
+      "route": "/logout",
+      "redirect": "/.auth/logout"
+    },
+    {
+      "route": "/loginlink",
+      "rewrite": "/loginlink.html"
     }
+
+  ],
+  "responseOverrides": {
+    "401": {
+      "statusCode": 302,
+      "redirect": "/loginlink"
+    }
+  }
 }
