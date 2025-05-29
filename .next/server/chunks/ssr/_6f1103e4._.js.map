@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/hiroshi/0525/AzureContainerApp_study/frontend/src/app/layout.tsx"],"sourcesContent":["// app/layout.tsx\nimport \"./globals.css\";\nimport type { Metadata } from \"next\";\n\nexport const metadata: Metadata = {\n  title: \"AI Chatbot\",\n  description: \"Chat with an AI using LangChain and FastAPI\",\n};\n\nexport default function RootLayout({\n  children,\n}: {\n  children: React.ReactNode;\n}) {\n  return (\n    <html lang=\"en\">\n      <body className=\"bg-gray-100 text-gray-900\">{children}</body>\n    </html>\n  );\n}\n"],"names":[],"mappings":"AAAA,iBAAiB;;;;;;;;AAIV,MAAM,WAAqB;IAChC,OAAO;IACP,aAAa;AACf;AAEe,SAAS,WAAW,EACjC,QAAQ,EAGT;IACC,qBACE,8OAAC;QAAK,MAAK;kBACT,cAAA,8OAAC;YAAK,WAAU;sBAA6B;;;;;;;;;;;AAGnD","debugId":null}},
+    {"offset": {"line": 41, "column": 0}, "map": {"version":3,"sources":["file:///Users/hiroshi/0525/AzureContainerApp_study/frontend/node_modules/next/src/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.ts"],"sourcesContent":["module.exports = require('../../module.compiled').vendored[\n  'react-rsc'\n].ReactJsxDevRuntime\n"],"names":["module","exports","require","vendored","ReactJsxDevRuntime"],"mappings":";AAAAA,OAAOC,OAAO,GAAGC,QAAQ,4HAAyBC,QAAQ,CACxD,YACD,CAACC,kBAAkB","ignoreList":[0],"debugId":null}}]
+}
